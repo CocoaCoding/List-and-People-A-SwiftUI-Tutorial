@@ -13,6 +13,11 @@
 		3F9333A6268264D1006EA379 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9333A5268264D1006EA379 /* Preview Assets.xcassets */; };
 		3F9333B1268264D1006EA379 /* List_and_PeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333B0268264D1006EA379 /* List_and_PeopleTests.swift */; };
 		3F9333BC268264D1006EA379 /* List_and_PeopleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333BB268264D1006EA379 /* List_and_PeopleUITests.swift */; };
+		3F9333CB2682651A006EA379 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CA2682651A006EA379 /* Person.swift */; };
+		3F9333CD268265B6006EA379 /* RandomPersonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */; };
+		3F9333CE26826AE7006EA379 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CA2682651A006EA379 /* Person.swift */; };
+		3F9333CF26826AEB006EA379 /* RandomPersonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */; };
+		3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333D026826D58006EA379 /* PersonsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 		3F9333B7268264D1006EA379 /* List and PeopleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "List and PeopleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9333BB268264D1006EA379 /* List_and_PeopleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_and_PeopleUITests.swift; sourceTree = "<group>"; };
 		3F9333BD268264D1006EA379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9333CA2682651A006EA379 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPersonGenerator.swift; sourceTree = "<group>"; };
+		3F9333D026826D58006EA379 /* PersonsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsRepository.swift; sourceTree = "<group>"; };
+		3F9333D226827474006EA379 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +84,7 @@
 		3F933392268264D0006EA379 = {
 			isa = PBXGroup;
 			children = (
+				3F9333D226827474006EA379 /* README.md */,
 				3F93339D268264D0006EA379 /* List and People */,
 				3F9333AF268264D1006EA379 /* List and PeopleTests */,
 				3F9333BA268264D1006EA379 /* List and PeopleUITests */,
@@ -95,6 +105,7 @@
 		3F93339D268264D0006EA379 /* List and People */ = {
 			isa = PBXGroup;
 			children = (
+				3F9333C9268264F5006EA379 /* Data */,
 				3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */,
 				3F9333A0268264D0006EA379 /* ContentView.swift */,
 				3F9333A2268264D1006EA379 /* Assets.xcassets */,
@@ -128,6 +139,16 @@
 				3F9333BD268264D1006EA379 /* Info.plist */,
 			);
 			path = "List and PeopleUITests";
+			sourceTree = "<group>";
+		};
+		3F9333C9268264F5006EA379 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3F9333CA2682651A006EA379 /* Person.swift */,
+				3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */,
+				3F9333D026826D58006EA379 /* PersonsRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9333CB2682651A006EA379 /* Person.swift in Sources */,
+				3F9333CD268265B6006EA379 /* RandomPersonGenerator.swift in Sources */,
+				3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */,
 				3F9333A1268264D0006EA379 /* ContentView.swift in Sources */,
 				3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */,
 			);
@@ -268,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9333CE26826AE7006EA379 /* Person.swift in Sources */,
+				3F9333CF26826AEB006EA379 /* RandomPersonGenerator.swift in Sources */,
 				3F9333B1268264D1006EA379 /* List_and_PeopleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
