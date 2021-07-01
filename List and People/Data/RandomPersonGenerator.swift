@@ -4,7 +4,7 @@
 
 import Foundation
 
-public struct RandomPersonGenerator {
+public class RandomPersonGenerator {
     
     static let shared = RandomPersonGenerator()
     private var firstNames = [String]()

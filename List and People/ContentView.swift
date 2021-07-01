@@ -7,13 +7,14 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var repo = PersonsRepository(randomPersonsCount: 10)
-    
-    var body: some View {
-        List {
+        
+   var body: some View {
+
+       List {
             ForEach(self.repo.persons, id: \.id) { person in
-                Text("\(person.firstName) \(person.lastName)").font(.headline)
+                PersonListCell(person: person)
             }
-        }
+        }.listStyle(PlainListStyle())
     }
 }
 

@@ -5,7 +5,6 @@
 import Foundation
 
 public class Person {
-    
     let id = UUID()
     var firstName : String = ""
     var lastName : String = ""

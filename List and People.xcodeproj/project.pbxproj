@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0275A4268E54A30090979D /* PersonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0275A3268E54A30090979D /* PersonListCell.swift */; };
 		3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */; };
 		3F9333A1268264D0006EA379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333A0268264D0006EA379 /* ContentView.swift */; };
 		3F9333A3268264D1006EA379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9333A2268264D1006EA379 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0275A3268E54A30090979D /* PersonListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListCell.swift; sourceTree = "<group>"; };
 		3F93339B268264D0006EA379 /* List and People.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "List and People.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_and_PeopleApp.swift; sourceTree = "<group>"; };
 		3F9333A0268264D0006EA379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				3F9333C9268264F5006EA379 /* Data */,
 				3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */,
 				3F9333A0268264D0006EA379 /* ContentView.swift */,
+				3F0275A3268E54A30090979D /* PersonListCell.swift */,
 				3F9333A2268264D1006EA379 /* Assets.xcassets */,
 				3F9333A7268264D1006EA379 /* Info.plist */,
 				3F9333A4268264D1006EA379 /* Preview Content */,
@@ -284,6 +287,7 @@
 				3F9333CD268265B6006EA379 /* RandomPersonGenerator.swift in Sources */,
 				3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */,
 				3F9333A1268264D0006EA379 /* ContentView.swift in Sources */,
+				3F0275A4268E54A30090979D /* PersonListCell.swift in Sources */,
 				3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -448,7 +452,7 @@
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "List and People/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +474,7 @@
 				DEVELOPMENT_TEAM = Q4JYUA6UF4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "List and People/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
