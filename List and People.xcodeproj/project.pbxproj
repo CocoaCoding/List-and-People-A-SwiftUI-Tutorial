@@ -19,6 +19,7 @@
 		3F9333CE26826AE7006EA379 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CA2682651A006EA379 /* Person.swift */; };
 		3F9333CF26826AEB006EA379 /* RandomPersonGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */; };
 		3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333D026826D58006EA379 /* PersonsRepository.swift */; };
+		3FE52A3E268F943A00BA6825 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE52A3D268F943A00BA6825 /* PersonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		3F9333CC268265B6006EA379 /* RandomPersonGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPersonGenerator.swift; sourceTree = "<group>"; };
 		3F9333D026826D58006EA379 /* PersonsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsRepository.swift; sourceTree = "<group>"; };
 		3F9333D226827474006EA379 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3FE52A3D268F943A00BA6825 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */,
 				3F9333A0268264D0006EA379 /* ContentView.swift */,
 				3F0275A3268E54A30090979D /* PersonListCell.swift */,
+				3FE52A3D268F943A00BA6825 /* PersonDetailView.swift */,
 				3F9333A2268264D1006EA379 /* Assets.xcassets */,
 				3F9333A7268264D1006EA379 /* Info.plist */,
 				3F9333A4268264D1006EA379 /* Preview Content */,
@@ -288,6 +291,7 @@
 				3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */,
 				3F9333A1268264D0006EA379 /* ContentView.swift in Sources */,
 				3F0275A4268E54A30090979D /* PersonListCell.swift in Sources */,
+				3FE52A3E268F943A00BA6825 /* PersonDetailView.swift in Sources */,
 				3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

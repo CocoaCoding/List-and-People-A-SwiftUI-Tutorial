@@ -20,8 +20,7 @@ struct PersonListCell: View {
                 Text("\(person.birthday.formatted(.dateTime.year().month().day()))")
                     .font(.body).foregroundColor(.secondary)
                 Spacer()
-            }
-            
+            }            
         }.padding(EdgeInsets(top: 1, leading: 5, bottom: 1, trailing: 0))
     }
 }

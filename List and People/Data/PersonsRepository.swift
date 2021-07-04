@@ -14,4 +14,8 @@ public class PersonsRepository : ObservableObject  {
             self.persons.append(RandomPersonGenerator.shared.generate())
         }        
     }
+    
+    func addRandomPerson() {
+        self.persons.insert(RandomPersonGenerator.shared.generate(), at: 0)
+    }
 }
