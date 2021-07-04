@@ -11,11 +11,7 @@
 2021-07-01
 - Added PersonListCell as a view for the List content
 - Target changed to iOS 15
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 18663c867156f2a958965dbfa92673def462f25d
 2021-06-21
 - Simple List of Persons in ContentView 
 - Class PersonRepository added
