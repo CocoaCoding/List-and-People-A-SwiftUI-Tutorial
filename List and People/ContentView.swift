@@ -26,12 +26,45 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                ForEach(self.repo.persons, id: \.id) { person in
-                    NavigationLink (destination: PersonDetailView(person: person))
-                    {
-                        PersonListCell(person: person)
+                ForEach (self.repo.getSections(), id:\.self ) { section in
+                    Section(header: SectionHeader(headlineText: section)) {
+                        ForEach(self.repo.persons.filter {$0.company == section}  , id: \.id) { person in
+                            NavigationLink (destination: PersonDetailView(person: person))
+                            {
+                                PersonListCell(person: person)
+                            }
+                            .swipeActions(edge: .leading , allowsFullSwipe: true) {
+                                Button {
+                                    print("Sent Button")
+                                } label: {
+                                    Label("Send", systemImage: "paperplane.fill")
+                                }
+                                .tint(.indigo)
+                                
+                                Button {
+                                    print("Bookmark Button")
+                                } label: {
+                                    Label("Bookmark", systemImage: "bookmark.circle")
+                                }
+                                .tint(.teal)
+                            }
+                            
+                            .swipeActions(edge: .trailing , allowsFullSwipe: true) {
+                                Button {
+                                    withAnimation {
+                                        self.repo.delete(person: person)
+                                    }
+                                } label: {
+                                    Label("Delete", systemImage: "trash.fill")
+                                }
+                                .tint(.red)
+                            }
+                        }
                     }
                 }
+                //.listRowSeparator(.hidden, edges: .top)
+                .listRowSeparatorTint( Color(red: 0.2, green: 0, blue: 1.0, opacity: 0.5) )
+                
             }.listStyle(PlainListStyle())
                 .navigationTitle("List and People")
                 .navigationBarTitleDisplayMode(.large)
@@ -41,7 +74,6 @@ struct ContentView: View {
                 }) {
                     Image(systemName: "plus.circle.fill")
                 } )
-            
         }
     }
 }

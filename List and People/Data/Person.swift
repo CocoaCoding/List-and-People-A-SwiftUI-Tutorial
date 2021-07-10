@@ -9,4 +9,5 @@ public class Person {
     var firstName : String = ""
     var lastName : String = ""
     var birthday : Date = Date()
+    var company : String = ""
 }

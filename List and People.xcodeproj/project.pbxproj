@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F0275A4268E54A30090979D /* PersonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0275A3268E54A30090979D /* PersonListCell.swift */; };
+		3F72C58C2694EE8B005B18F7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F72C58B2694EE8B005B18F7 /* SectionHeader.swift */; };
 		3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */; };
 		3F9333A1268264D0006EA379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9333A0268264D0006EA379 /* ContentView.swift */; };
 		3F9333A3268264D1006EA379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9333A2268264D1006EA379 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		3F0275A3268E54A30090979D /* PersonListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListCell.swift; sourceTree = "<group>"; };
+		3F72C58B2694EE8B005B18F7 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		3F93339B268264D0006EA379 /* List and People.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "List and People.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F93339E268264D0006EA379 /* List_and_PeopleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List_and_PeopleApp.swift; sourceTree = "<group>"; };
 		3F9333A0268264D0006EA379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				3F9333A0268264D0006EA379 /* ContentView.swift */,
 				3F0275A3268E54A30090979D /* PersonListCell.swift */,
 				3FE52A3D268F943A00BA6825 /* PersonDetailView.swift */,
+				3F72C58B2694EE8B005B18F7 /* SectionHeader.swift */,
 				3F9333A2268264D1006EA379 /* Assets.xcassets */,
 				3F9333A7268264D1006EA379 /* Info.plist */,
 				3F9333A4268264D1006EA379 /* Preview Content */,
@@ -290,6 +293,7 @@
 				3F9333CD268265B6006EA379 /* RandomPersonGenerator.swift in Sources */,
 				3F9333D126826D58006EA379 /* PersonsRepository.swift in Sources */,
 				3F9333A1268264D0006EA379 /* ContentView.swift in Sources */,
+				3F72C58C2694EE8B005B18F7 /* SectionHeader.swift in Sources */,
 				3F0275A4268E54A30090979D /* PersonListCell.swift in Sources */,
 				3FE52A3E268F943A00BA6825 /* PersonDetailView.swift in Sources */,
 				3F93339F268264D0006EA379 /* List_and_PeopleApp.swift in Sources */,

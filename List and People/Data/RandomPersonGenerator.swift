@@ -9,6 +9,7 @@ public class RandomPersonGenerator {
     static let shared = RandomPersonGenerator()
     private var firstNames = [String]()
     private var lastNames = [String]()
+    private var companies = [String]()
     private let minBirthYear = 1960
     private let maxBirthYear = 2010
     
@@ -20,6 +21,8 @@ public class RandomPersonGenerator {
         lastNames.append(contentsOf: ["Swift", "Piper", "Steele", "Rogers", "Stark", "Hawkins", "Lee", "Kirby"] )
         lastNames.append(contentsOf: ["Cambell", "Hart", "Jordan", "Fielding", "Crispin","Ford", "Jones"])
         lastNames.append(contentsOf: ["Anderson", "Reeves", "Sagan", "Morgan", "Parker", "Watson"])
+        
+        companies.append(contentsOf: ["Apple", "Microsoft", "Dell"])
     }
     
     private func getRandomDate() -> Date {
@@ -44,6 +47,7 @@ public class RandomPersonGenerator {
         let person = Person()
         person.firstName = self.firstNames.randomElement()!
         person.lastName = self.lastNames.randomElement()!
+        person.company = self.companies.randomElement()!
         person.birthday = self.getRandomDate()
         return person
     }    

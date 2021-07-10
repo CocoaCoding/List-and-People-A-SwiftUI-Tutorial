@@ -2,6 +2,11 @@
 ## A SwiftUI Tutorial
 ### Everything you can do with a List in SwiftUI
 
+2021-07-10
+- Tint color for List line separators
+- SwipeActions and Delete funtion
+- List Sections and custom Section Header
+
 2021-07-04
 - Accent Color changed to white
 - Add-Button added to Navigationbar 
@@ -18,4 +23,3 @@
 - Class Person added
 - Struct RandomPersonGenerator added
 - Project created
-
