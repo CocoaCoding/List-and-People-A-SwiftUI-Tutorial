@@ -6,16 +6,17 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var searchText = ""
     @ObservedObject var repo = PersonsRepository(randomPersonsCount: 10)
     
     init() {
         let customAppearance = UINavigationBarAppearance()
         // Backgroundcolor
-        customAppearance.backgroundColor = UIColor.lightGray
+        customAppearance.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 1.0, alpha: 1)
         // Font color for navigationBarTitleDisplayMode large
-        customAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        customAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.systemBlue]
         // Font color for navigationBarTitleDisplayMode inline
-        customAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        customAppearance.titleTextAttributes = [.foregroundColor: UIColor.systemBlue]
         
         UINavigationBar.appearance().standardAppearance = customAppearance
         UINavigationBar.appearance().compactAppearance = customAppearance
@@ -26,12 +27,16 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                ForEach (self.repo.getSections(), id:\.self ) { section in
+                ForEach (self.repo.getSections(searchText: self.searchText) , id:\.self ) { section in
                     Section(header: SectionHeader(headlineText: section)) {
-                        ForEach(self.repo.persons.filter {$0.company == section}  , id: \.id) { person in
+                        ForEach(self.repo.persons.filter {$0.company == section && $0.matchesFilter(searchText: self.searchText) }  , id: \.id) { person in
                             NavigationLink (destination: PersonDetailView(person: person))
                             {
                                 PersonListCell(person: person)
+                                    .badge(Text(person.getAge())
+                                            .foregroundColor(Color.blue)
+                                            .font(.subheadline )
+                                    )
                             }
                             .swipeActions(edge: .leading , allowsFullSwipe: true) {
                                 Button {
@@ -62,17 +67,27 @@ struct ContentView: View {
                         }
                     }
                 }
-                //.listRowSeparator(.hidden, edges: .top)
                 .listRowSeparatorTint( Color(red: 0.2, green: 0, blue: 1.0, opacity: 0.5) )
                 
             }.listStyle(PlainListStyle())
+                .refreshable {
+                    await self.repo.addRandomPersonAsync()
+                }
+                .searchable(
+                    text: $searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Search something...")
+                .onChange(of: searchText) { searchText in
+                    print(searchText)
+                }
+            
                 .navigationTitle("List and People")
                 .navigationBarTitleDisplayMode(.large)
                 .navigationBarItems(trailing:
                                         Button(action: {
                     self.repo.addRandomPerson()
                 }) {
-                    Image(systemName: "plus.circle.fill")
+                    Image(systemName: "plus.circle.fill").tint(Color(UIColor.systemBlue))
                 } )
         }
     }

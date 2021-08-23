@@ -21,7 +21,6 @@ public class RandomPersonGenerator {
         lastNames.append(contentsOf: ["Swift", "Piper", "Steele", "Rogers", "Stark", "Hawkins", "Lee", "Kirby"] )
         lastNames.append(contentsOf: ["Cambell", "Hart", "Jordan", "Fielding", "Crispin","Ford", "Jones"])
         lastNames.append(contentsOf: ["Anderson", "Reeves", "Sagan", "Morgan", "Parker", "Watson"])
-        
         companies.append(contentsOf: ["Apple", "Microsoft", "Dell"])
     }
     

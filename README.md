@@ -1,6 +1,12 @@
 #  List and People
 ## A SwiftUI Tutorial
-### Everything you can do with a List in SwiftUI
+### (Hopefully) Everything you can do with a List in SwiftUI
+
+2021-08-23
+- seachable for List
+- refreshable for List
+- Badge for Listelement PersonListCell
+- getAge function for Class Person
 
 2021-07-10
 - Tint color for List line separators
